@@ -1,1 +1,15 @@
-test style
+.header{
+	background-color: #ED2F5A;
+}
+
+
+
+/*Header Css*/
+.header{
+	height: 35px;
+}
+.menu_icon{
+	position: absolute;
+    right: 30px;
+    top: 9px;
+}
