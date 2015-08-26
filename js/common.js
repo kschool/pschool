@@ -4,10 +4,6 @@ var slider = {
 	}
 }
 
-
-
-
-
 $(function(){
 	slider.homeSlider();
 });

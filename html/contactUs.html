@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+	</head>
+	<body>
+		<div class="container contactUs">
+			<div class="wrapper">
+				<div class="logoContainer row">
+					<img src="../images/logo.jpeg" alt="schoolLogo" class="logoImg col-lg-4"/>
+					<h1 class="col-lg-8">Jeferson Parish Public School</h1>
+				</div>
+				<ul class="menus">
+					<li ><a href="home.html"> Home</a></li>
+					<li><a href="#">About our School</a></li>
+					<li><a href="#">Pupils</a></li>
+					<li><a href="#">Parents</a></li>
+					<li><a href="#">Curriculum</a></li>
+					<li><a href="#">News & Events</a></li>
+					<li class="active"><a href="contactUs.html">Contact Us</a></li>
+				</ul>
+				<ul id="homePageSlider">
+					<li><img src="../images/slider1.png" /></li>
+					<li><img src="../images/slider2.png" /></li>
+					<li><img src="../images/slider3.png" /></li>
+					<li><img src="../images/slider4.png" /></li>
+				</ul>
+				<div class="row">
+					<div class="col-lg-8">
+						<h2>Welcome to Walton Oak Primary School</h2>
+						<address>
+							<span><b>Address :</b></span>
+							<p>6 Parijat, University Road,, Fergusson College Campus, <br/> Shivajinagar, Pune, Maharashtra 411004</p>
+							<span><b>Contact Numbers :</b></span><br>	
+							<span>Tel:<a href="">+81 2358986302</a></span><br>
+							<span>Mobile No:<a href="">+81 2358986302</a></span>
+						</address>
+						
+						<div id="googleMap"></div>
+						
+					</div>
+					<div class="col-lg-4 rightContainer">
+						<ul>
+							<li>Fergusson College (FC) is a degree college in western India, situated in the city of Pune. It was founded in 1885 by the Deccan Education Society and was the first privately governed college in India. Professor Vaman Shivram Apte was the first principal of the college.</li>
+							<li>Fergusson College (FC) is a degree college in western India, situated in the city of Pune. It was founded in 1885 by the Deccan Education Society and was the first privately governed college in India. Professor Vaman Shivram Apte was the first principal of the college.</li>
+							<li>Fergusson College (FC) is a degree college in western India, situated in the city of Pune. It was founded in 1885 by the Deccan Education Society and was the first privately governed college in India. Professor Vaman Shivram Apte was the first principal of the college.</li>
+							<li>Fergusson College (FC) is a degree college in western India, situated in the city of Pune. It was founded in 1885 by the Deccan Education Society and was the first privately governed college in India. Professor Vaman Shivram Apte was the first principal of the college.</li>
+							
+						</ul>
+					</div>
+						
+				</div>
+
+
+				<footer>Copyrights reserved at Jeferson Parish Public School</footer>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+var myCenter=new google.maps.LatLng(18.5164,73.8558);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+	</body>
+</html>
